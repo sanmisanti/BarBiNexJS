@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { ThreeDCardDemo } from "../ThreeDCardDemo";
+import { TypewriterEffectSmooth } from "./typewriter-effect";
 
 export const HeroParallax = ({
   products,
@@ -58,7 +59,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] max-w-[100vw] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <div className="max-w-7xl relative mx-auto px-4 w-full  left-0 top-0">
@@ -106,12 +107,23 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
+  const words = [
+    { text: "BarBi" },
+    { text: "studios, " },
+    { text: "the" },
+    { text: "best" },
+    { text: "of" },
+    { text: "the" },
+    { text: "best" },
+  ];
+
   return (
     <div className="max-w-7xl relative mx-auto py-5 md:py-40 px-4 w-full  left-0 top-0">
       {" "}
       {/* Aca */}
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        BarBi <br /> studios
+        <TypewriterEffectSmooth words={words} />
+        {/* BarBi <br /> studios */}
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         Preparate para potenciar tu empresa alcanzando niveles estratofericos de
