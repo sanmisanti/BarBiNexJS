@@ -1,7 +1,7 @@
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import Image from "next/image";
 import lark from "../../public/Lark.png"
-import ocsheet from "../../public/ocsheet.png"
+import ocsheet from "../../public/ocSheet.png"
 import SaltaCat from "../../public/SaltaCat.png"
 import sc from "../../public/sc.png"
 
