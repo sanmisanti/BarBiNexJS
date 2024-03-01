@@ -1,5 +1,10 @@
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import Image from "next/image";
+import lark from "../../public/Lark.png"
+import ocsheet from "../../public/ocsheet.png"
+import SaltaCat from "../../public/SaltaCat.png"
+import sc from "../../public/sc.png"
+
 
 export default function Home() {
   const products = [
@@ -7,25 +12,25 @@ export default function Home() {
       title: "SaltaCompra",
       link: "https://saltacompra.gob.ar/",
       thumbnail:
-        "/../../sc.png",
+      sc,
     },
     {
       title: "Sheet APP",
       link: "sheets.new",
       thumbnail:
-        "/../../ocSheet.png",
+        ocsheet,
     },
     {
       title: "Catálogo",
       link: "https://editrix.ai",
       thumbnail:
-        "/../../SaltaCat.png",
+        SaltaCat,
     },
     {
       title: "LARK",
       link: "https://app.pixelperfect.quest",
       thumbnail:
-        "/../../Lark.png",
+      lark,
     },
     {
       title: "Moonbeam",
